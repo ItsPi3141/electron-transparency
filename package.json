@@ -5,7 +5,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"test": "electron ./example/index.js",
-		"postinstall": "node-gyp rebuild && mv ./build/Release/electronTransparency.node ./src/electronTransparency.node"
+		"rebuild": "node-gyp rebuild && mv ./build/Release/electronTransparency.node ./src/electronTransparency.node"
 	},
 	"keywords": ["electron", "mica", "transparency", "windows"],
 	"author": "ItsPi3141",
