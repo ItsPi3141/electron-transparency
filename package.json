@@ -1,0 +1,24 @@
+{
+	"name": "electron-transparency",
+	"version": "1.0.0",
+	"description": "Mica background for Electron apps",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "electron ./example/index.js",
+		"postinstall": "node-gyp rebuild && mv ./build/Release/electronTransparency.node ./src/electronTransparency.node"
+	},
+	"keywords": ["electron", "mica", "transparency", "windows"],
+	"author": "ItsPi3141",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ItsPi3141/electron-transparency"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@electron/rebuild": "^3.7.0",
+		"electron": "^33.2.0"
+	},
+	"dependencies": {
+		"bindings": "^1.5.0"
+	}
+}

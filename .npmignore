@@ -1,0 +1,7 @@
+bin/
+build/
+example/
+node_modules/
+
+.gitignore
+pnpm-lock.yaml
