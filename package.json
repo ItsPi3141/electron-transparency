@@ -5,7 +5,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"test": "electron ./example/index.js",
-		"rebuild": "node-gyp rebuild && mv ./build/Release/electronTransparency.node ./src/electronTransparency.node"
+		"rebuild": "node-gyp rebuild"
 	},
 	"keywords": ["electron", "mica", "transparency", "windows"],
 	"author": "ItsPi3141",
@@ -16,7 +16,8 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@electron/rebuild": "^3.7.0",
-		"electron": "^33.2.0"
+		"electron": "^33.2.0",
+		"node-gyp": "^10.2.0"
 	},
 	"dependencies": {
 		"bindings": "^1.5.0"
